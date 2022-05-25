@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.irental.houserent.mapper.HouseMapper">
+    <select id="searchHouse" resultType="com.irental.houserent.entity.House">
+        select * from t_house
+        <where>
+            1=1
+            <if test="houseSearchVO.status !=null">
+                and status = #{houseSearchVO.status}
+            </if>
+            <if test="houseSearchVO.address !=null and houseSearchVO.address!=''">
+                and address like concat('%',#{houseSearchVO.address},'%')
+            </if>
+            <if test="houseSearchVO.city !=null and houseSearchVO.city!=''">
+                and city like concat('%',#{houseSearchVO.city},'%')
+            </if>
+            <if test="houseSearchVO.rentType !=null and houseSearchVO.rentType!=''">
+                and rent_type = #{houseSearchVO.rentType}
+            </if>
+            <if test="houseSearchVO.minPrice !=null">
+                and month_rent &gt;= #{houseSearchVO.minPrice}
+            </if>
+            <if test="houseSearchVO.maxPrice !=null">
+                and month_rent &lt;= #{houseSearchVO.maxPrice}
+            </if>
+            <if test="houseSearchVO.minArea !=null">
+                and area &gt;= #{houseSearchVO.minArea}
+            </if>
+            <if test="houseSearchVO.maxArea !=null">
+                and area &lt;= #{houseSearchVO.maxArea}
+            </if>
+
+        </where>
+    </select>
+</mapper>

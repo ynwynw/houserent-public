@@ -1,0 +1,12 @@
+{
+  "serverUrl": "http://localhost:9999",
+  "outPath": "src/main/resources/static/doc",
+  "isStrict": false,
+  "allInOne": true,
+  "createDebugPage": false,
+  "packageFilters": "com.irental.houserent.controller.*",
+  "style": "xt256",
+  "projectName": "iRental",
+  "showAuthor": false,
+  "allInOneDocFileName": "index.html"
+}
