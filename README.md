@@ -2,7 +2,11 @@
 
 **需要完整代码可以加qq   931708230 或者加微信   ynwwxid**
 
-#房屋租赁管理系统 #java web #java #毕业设计 #课程设计 #mybatis #Springboot  #vue #mysql #源代码
+**[博客地址](https://blog.csdn.net/weixin_43927649/article/details/126838919)**
+
+**视频演示：[视频演示地址](https://www.bilibili.com/video/BV1CP4y1i7RX/)**
+
+**毕业设计所有选题地址：[https://github.com/ynwynw/allProject](https://github.com/ynwynw/allProject)**
 
 ## 基于springboot房屋租赁管理系统 (源代码+数据库)
 
